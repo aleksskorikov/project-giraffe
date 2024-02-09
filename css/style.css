@@ -1,0 +1,419 @@
+.header {
+  max-width: 120rem;
+  margin: 0 auto;
+  border: 2px solid black;
+}
+
+.slider__block-text, .slider__trainer-description, .studies__format-text, .section__directions-btn, .bock__data-btn, .block__nav-link {
+  color: rgb(0, 0, 0);
+  font-family: Bookman Old Style;
+  font-size: 1.63rem;
+  font-weight: 300;
+  line-height: 1.94rem;
+}
+
+.section__directions-btn, .bock__data-btn {
+  top: 0;
+  position: relative;
+}
+.section__directions-btn:hover, .bock__data-btn:hover {
+  background: rgb(221, 220, 220);
+}
+.section__directions-btn:active, .bock__data-btn:active {
+  top: 1px;
+}
+
+.section__reviews-title, .section__team-title, .section__trips-text, .section__trips-title, .format__blocks-title, .studies__format-title, .studies__language-list, .studies__language-title, .section__direction-linck, .section__directions-title, .aboutus__product-text, .section__aboutus-title, .bock__data-text, .format__blocks-title::before, .studies__language-list::before, .section__directions-list::before {
+  color: rgb(0, 0, 0);
+  font-family: Bookman Old Style;
+  font-size: 3.13rem;
+  font-weight: 300;
+  line-height: 130%;
+}
+
+.section__reviews-subtitle, .section__team-subtitle, .section__trips-subtitle, .section__studies-subtitle, .section__directions-subtitle, .section__aboutus-subtitle {
+  color: rgb(0, 0, 0);
+  font-family: Bookman Old Style;
+  font-size: 1.63rem;
+  font-weight: 600;
+  line-height: 1.94rem;
+  margin: 7rem 0 0 0;
+}
+
+.format__blocks-title::before, .studies__language-list::before, .section__directions-list::before {
+  content: counter(directions-counter);
+  counter-increment: directions-counter;
+  position: absolute;
+  font-size: 2.13rem;
+  left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border: 0.13rem solid rgb(0, 0, 0);
+  border-radius: 50%;
+}
+
+.header {
+  max-height: 65rem;
+  background: url(../images/img/Polygon\ 2.svg) no-repeat 55rem -3rem;
+  background-color: rgba(222, 116, 43, 0.9);
+}
+
+.conteiner {
+  max-width: 106rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.header__block-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  margin: 3rem 0 1.8rem;
+}
+
+.block__nav-lists {
+  display: flex;
+  gap: 2rem;
+}
+
+.block__nav-contact {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav__contact-btn {
+  background-color: inherit;
+}
+
+.section__division {
+  border: 0.13rem solid rgb(252, 252, 252);
+  width: 110rem;
+  margin-left: -8rem;
+}
+
+.header__block-data {
+  margin: 9.5rem 0 0 7.5rem;
+  max-width: 50rem;
+}
+
+.bock__data-title {
+  font-family: Bookman Old Style;
+  font-size: 5.63rem;
+  font-weight: 600;
+  line-height: 6.63rem;
+}
+
+.bock__data-text {
+  margin: 1.2rem 0 5.7rem;
+}
+
+.bock__data-btn {
+  width: 25.25rem;
+  height: 4.44rem;
+  border-radius: 0.63rem;
+  cursor: pointer;
+}
+
+.block__foto-foto {
+  width: 34rem;
+  position: relative;
+  z-index: 1;
+  top: -35rem;
+  left: 67rem;
+}
+
+.section__aboutus-title {
+  text-align: center;
+  margin: -2rem 0 4rem;
+}
+
+.products-conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5.2rem;
+  max-width: 86rem;
+  margin: 0 auto;
+}
+
+.section__aboutus-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+  border: 0.13rem solid rgb(0, 0, 0);
+  border-radius: 1.25rem;
+  padding: 3.3rem 3rem;
+}
+
+.aboutus__product-img {
+  width: 14rem;
+  margin-bottom: 1rem;
+}
+
+.aboutus__product-text {
+  font-size: 2.13rem;
+  text-align: center;
+}
+
+.section__directions {
+  background-color: rgba(222, 116, 43, 0.9);
+  margin-top: 7rem;
+}
+
+.section__directions-vrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.section__directions-subtitle {
+  color: white;
+  padding-top: 7rem;
+}
+
+.section__directions-foto {
+  width: 26rem;
+}
+
+.section__directions-data {
+  text-align: center;
+  margin-top: -2rem;
+  max-width: 50rem;
+}
+
+.section__directions-title {
+  margin-bottom: 4rem;
+}
+
+.section__directions-lists {
+  margin: 0 1rem;
+  text-align: left;
+  counter-reset: directions-counter;
+}
+
+.section__directions-list {
+  display: flex;
+  align-items: center;
+  padding: 1.6rem 0 1.6rem 6rem;
+  border-top: 0.13rem solid rgb(0, 0, 0);
+  position: relative;
+}
+.section__directions-list:nth-last-child(1) {
+  border-bottom: 0.13rem solid rgb(0, 0, 0);
+}
+.section__direction-linck {
+  font-size: 2.13rem;
+}
+
+.section__directions-btn {
+  width: 19.5rem;
+  height: 4.44rem;
+  border: 0.13rem solid rgb(0, 0, 0);
+  border-radius: 0.63rem;
+  margin: 4rem 0 7.5rem 0;
+}
+
+.section__studies-language {
+  display: flex;
+  justify-content: space-between;
+  margin: 4.5rem 0 0 0;
+}
+
+.studies__language-title {
+  margin-top: -1.5rem;
+}
+
+.studies__language-lists {
+  margin-top: 4rem;
+  counter-reset: directions-counter;
+}
+
+.studies__language-list {
+  display: flex;
+  align-items: center;
+  font-size: 2.13rem;
+  position: relative;
+  padding: 1.6rem 0 0;
+  margin-left: 6rem;
+}
+.studies__language-list::before {
+  margin-left: -7rem;
+}
+
+.studies__language-img {
+  width: 60%;
+}
+
+.studies__format-title {
+  text-align: center;
+  position: relative;
+  margin: 4rem;
+}
+
+.studies__format-blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 6rem;
+  counter-reset: directions-counter;
+}
+
+.studies__format-block {
+  position: relative;
+  max-width: 21rem;
+}
+
+.format__blocks-title {
+  position: relative;
+}
+.format__blocks-title::before {
+  left: -6rem;
+}
+
+.section__trips-title {
+  text-align: center;
+  margin-top: -1.5rem;
+}
+
+.section__trips-text {
+  font-size: 2.13rem;
+  margin: 3rem 0;
+}
+
+.section__trips-collage {
+  display: grid;
+  grid-template-columns: 25.6rem 42.3rem 34.8rem;
+  gap: 0.7rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.trips__collage-block {
+  display: grid;
+  grid-template-columns: 17.9rem 25.5rem;
+  gap: 0.7rem;
+  margin-left: -9rem;
+  margin-top: -7.2rem;
+}
+
+.trips__collage-img1 {
+  width: 25.63rem;
+  grid-column: 1;
+  grid-row: 1;
+  border-radius: 1rem;
+}
+
+.trips__collage-img2 {
+  width: 42.3rem;
+  grid-column: 2;
+  grid-row: 1;
+  border-radius: 1rem;
+}
+
+.trips__collage-img3 {
+  width: 34.8rem;
+  grid-column: 3;
+  grid-row: 1;
+  border-radius: 1rem;
+}
+
+.trips__collage-img4 {
+  width: 25.63rem;
+  grid-column: 1;
+  grid-row: 2;
+  border-radius: 1rem;
+}
+
+.trips__collage-img5 {
+  width: 33.5rem;
+  grid-column: 2;
+  grid-row: 2;
+  margin-top: -7.2rem;
+  border-radius: 1rem;
+}
+
+.trips__collage-img6 {
+  grid-column: 1/3;
+  width: 45rem;
+  border-radius: 1rem;
+}
+
+.trips__collage-img7 {
+  grid-column: 1;
+  grid-row: 2;
+  width: 19.5rem;
+  border-radius: 1rem;
+}
+
+.trips__collage-img8 {
+  grid-column: 2;
+  grid-row: 2;
+  width: 27.6rem;
+  margin-left: 1.5rem;
+  border-radius: 1rem;
+}
+
+.section__team {
+  background-color: rgba(222, 116, 43, 0.9);
+  margin-top: 7rem;
+}
+
+.section__team-title {
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.section__team-slider {
+  display: flex;
+  position: relative;
+}
+
+.slider {
+  position: relative;
+  padding: 0 60px;
+  margin-top: 1rem;
+}
+
+.slick-list {
+  overflow: hidden;
+  max-width: 85rem;
+  margin: 0 auto;
+}
+
+.slick-track {
+  display: flex;
+  text-align: center;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  font-size: 0;
+  width: 4rem;
+  height: 4rem;
+  background: red;
+}
+
+.slick-prev {
+  top: 40%;
+  left: 5%;
+  background-image: url(../images/img/arrow\ left.svg);
+}
+
+.slick-next {
+  top: 40%;
+  right: 5%;
+  background-image: url(../images/img/arrow\ rite.svg);
+}
+
+.section__team-img {
+  width: 20rem;
+  height: 22rem;
+}/*# sourceMappingURL=style.css.map */
