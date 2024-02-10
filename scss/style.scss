@@ -6,7 +6,6 @@ $colorbleck: rgb(0, 0, 0);
 %maxwidht{
     max-width: 120rem;
     margin: 0 auto;
-    border: 2px solid black
 }
 %textbloc1{
     color: $colorbleck;
@@ -67,8 +66,7 @@ $colorbleck: rgb(0, 0, 0);
     max-width: 106rem;
     padding: 0 1rem;
     margin: 0 auto;
-    border: 1px solid black;
-    
+    position: relative;
 }
 
 .header__block {
@@ -80,8 +78,7 @@ $colorbleck: rgb(0, 0, 0);
     justify-content: space-between;
     position: relative;
     z-index: 3;
-    margin: 3rem 0 1.8rem;
-    
+    padding: 3rem 0 1.8rem;
 }
 
 .block__nav {}
@@ -202,6 +199,7 @@ $colorbleck: rgb(0, 0, 0);
 // ======================section__directions================================
 
 .section__directions {
+    @extend %maxwidht;
     background-color: $colororange;
     margin-top: 7rem;
 }
@@ -350,6 +348,7 @@ $colorbleck: rgb(0, 0, 0);
 
 .section__trips-subtitle {
     @extend %subtitle;
+    padding-top: 5rem
 }
 
 .section__trips-title {
@@ -436,46 +435,68 @@ $colorbleck: rgb(0, 0, 0);
 // =======================section__team================================
 
 .section__team {
+    @extend %maxwidht;
     background-color: $colororange;
     margin-top: 7rem;
+    
 }
 
 .section__team-subtitle {
     @extend %subtitle;
+    padding-top: 5rem;
 }
 
 .section__team-title {
     @extend %titleh2;
     margin-top: -2rem;
-    margin-bottom: 4rem;
     text-align: center;
 }
 
 .section__team-slider {
     display: flex;
-    // flex-direction: column;
     position: relative;
+    transition: transform 0.3s ease;
 }
-.section__team {
-    
-}
+
 
 .slider {
     position: relative;
     padding: 0 60px;
     margin-top: 1rem;
 }
+.slick-center {
+    transform: translateY(-5rem);
+    transition: transform 0.3s ease; 
+}
+.slick-center .slider__trainer-block{
+    border-radius: 1rem 1rem 0 0;
+    background: inherit;
+    width: 120%;
+    margin-left: -1.5rem;
+}
+.slick-slide {
+    outline: none;
+    transition: transform 0.3s ease; 
+}
+
+.slick-center .slider__trainer-description{ 
+    width: 120%;
+    margin-left: -1.5rem;
+    margin-top: -0.1rem;
+    display: block;
+}
 
 .slick-list {
     overflow: hidden;
-    max-width: 85rem;
-    margin: 0 auto;
+    max-width: 75%;
+    margin:-15rem auto;
 }
 
 .slick-track {
     display: flex;
     text-align: center;
-
+    margin: auto;
+    padding: 25rem 0rem;
 }
 
 .slick-arrow {
@@ -483,44 +504,58 @@ $colorbleck: rgb(0, 0, 0);
     top: 40%;
     z-index: 10;
     font-size: 0;
-    width: 4rem;
-    height: 4rem;
-    background: red;
+    width: 5rem;
+    height: 5rem;
+    background: inherit;
 }
 
 .slick-prev {
-    top: 40%;
-    left: 5%;
-    
-    background-image: url(../images/img/arrow\ left.svg);
+    top: 44%;
+    background-image: url(../images/img/sl1\ Button\ Left.svg);
+    background-size: cover;
 }
 
 .slick-next {
-    top: 40%;
-    right: 5%;
-    background-image: url(../images/img/arrow\ rite.svg);
+    top: 44%;
+    right: 0;
+    background-image: url(../images/img/sl\ 1\ Button\ Right.svg);
+    background-size: cover;
 }
 
+
+.team__slider-trainer{
+    background: white;
+    border-radius: 1rem;
+    margin: 0 3.6rem;
+    max-height: 32rem;
+}
 .section__team-img {
-    width: 20rem;
-    height: 22rem;
+    width: 100%;
+    border-radius: 1rem;
 }
 
 
-.slider__trainer-name {}
+.slider__trainer-name {
+    @extend %textbloc1;
+    font-size: 1.88rem;
+    margin: 2rem 0 1rem 0;
+}
 
-.slider__trainer-position {}
+.slider__trainer-position {
+    @extend %textbloc1;
+}
 
 .slider__trainer-description {
     @extend %textbloc1;
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem;
+    display: none;
+    background: white;
+    border-radius: 0 0 1rem 1rem
 }
 
 
 // ========================section__reviews===============================
-
-.section__reviews {
-    
-}
 
 .section__reviews-subtitle {
     @extend %subtitle;
@@ -528,42 +563,120 @@ $colorbleck: rgb(0, 0, 0);
 
 .section__reviews-title {
     @extend %titleh2;
+    margin-top: -2rem;
+    margin-bottom: 4rem;
+    text-align: center;
 }
 
-.section__reviews-slider {}
+.swiper-container{
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 7.5rem;
+}
+.swiper-wrapper{
+    display: flex;
+    margin: auto;
+}
+.swiper-slide{
+    width: 84rem;
+}
+.swiper-button{
+    font-size: 0;
+}
+.swiper-button-next, .swiper-button-prev {
+    width: 5rem;
+    height:5rem;
+    border: 0.13rem solid rgb(223, 128, 62);
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    font-size: 0;
+}
 
-.reviews__slider-block {}
+.swiper-button-next{
+    top: 56%;
+    background-image: url(../images/img/Vector\ 12.svg);
+    background-size: 3rem;
+    transform: rotate(180deg);
+}
+.swiper-button-prev{
+    top: 56%;
+    background-image: url(../images/img/Vector\ 12.svg);
+    background-size: 3rem;
+}
 
-.slider__block-name {}
+.reviews__slider-block {
+    text-align: start;
+    max-width: 84rem;
+    background:$colororange;
+    margin-top: 1rem;
+    padding: 3.1rem 5rem;
+    border-radius: 1.25rem;
+}
 
-.slider__block-data {}
+.slider__block-name {
+    @extend %titleh2;
+    font-size: 2.13rem;
+}
+
+.slider__block-data {
+    @extend %textbloc1;
+    margin-bottom: 1.1rem;
+}
 
 .slider__block-text{
     @extend %textbloc1;
+    border-top: 0.13rem solid rgb(252, 252, 252);
+    padding-top: 0.8rem;
 }
-.slider__block-img {}
+.slider__block-img {
+    margin-top: -16.5rem;
+    margin-left: 68.5rem;
+}
 
 // ==================footer=============================
+.footer{
+    @extend %maxwidht;
+    background: $colororange;
+}
+.footer__blocks {
+    display: flex;
+    justify-content: space-between;
+    padding: 7.5rem 0 8rem;
+}
 
-.footer__blocks {}
+.footer__blocks-title {
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3.06rem;
+    margin-top: 1rem
+}
 
-.footer__blocks-title {}
+.footer__block-tel,
+.footer__block-title,
+.footer__block-data,
+.footer__block-email,
+.footer__block-adress{
+    @extend %textbloc1;
+    margin-bottom: 1rem;
+}
 
-.footer__block-tel {}
+.footer__block-seti {
+    text-align: center;
+}
 
-.footer__block-title {}
+.seti__block {
+    margin-top: 0.8rem;
+}
 
-.footer__block-data {}
-
-.footer__block-email {}
-
-.footer__block-adress {}
-
-.footer__block-seti {}
-
-.seti__block {}
-
-.seti__block-img {}
+.seti__block-img {
+    padding-left: 0.8rem;
+}
 
 
 

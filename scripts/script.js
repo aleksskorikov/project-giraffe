@@ -3,7 +3,7 @@ $(document).ready(function () {
         // dots: true,
         slidesToShow: 3,
         arrows: true,
-        // centerMode: true,
+        centerMode: true,
         responsive: [
             {
                 breakpoint: 1100,
@@ -22,7 +22,7 @@ $(document).ready(function () {
 });
 
 // $(document).ready(function () {
-// 	$(".reviews__slider-block").slick({
+// 	$(".section__reviews-slider").slick({
 // 		// dots: true,
 // 		slidesToShow: 1,
 // 		// centerMode: true,
@@ -42,3 +42,12 @@ $(document).ready(function () {
 // 	]
 // 	});
 // })
+
+new Swiper('.section__reviews-slider', {
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+loop: true,
+});

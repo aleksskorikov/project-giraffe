@@ -1,10 +1,13 @@
-.header {
+.footer, .section__team, .section__directions, .header {
   max-width: 120rem;
   margin: 0 auto;
-  border: 2px solid black;
 }
 
-.slider__block-text, .slider__trainer-description, .studies__format-text, .section__directions-btn, .bock__data-btn, .block__nav-link {
+.footer__block-tel,
+.footer__block-title,
+.footer__block-data,
+.footer__block-email,
+.footer__block-adress, .slider__block-text, .slider__block-data, .slider__trainer-description, .slider__trainer-position, .slider__trainer-name, .studies__format-text, .section__directions-btn, .bock__data-btn, .block__nav-link {
   color: rgb(0, 0, 0);
   font-family: Bookman Old Style;
   font-size: 1.63rem;
@@ -23,7 +26,7 @@
   top: 1px;
 }
 
-.section__reviews-title, .section__team-title, .section__trips-text, .section__trips-title, .format__blocks-title, .studies__format-title, .studies__language-list, .studies__language-title, .section__direction-linck, .section__directions-title, .aboutus__product-text, .section__aboutus-title, .bock__data-text, .format__blocks-title::before, .studies__language-list::before, .section__directions-list::before {
+.slider__block-name, .section__reviews-title, .section__team-title, .section__trips-text, .section__trips-title, .format__blocks-title, .studies__format-title, .studies__language-list, .studies__language-title, .section__direction-linck, .section__directions-title, .aboutus__product-text, .section__aboutus-title, .bock__data-text, .format__blocks-title::before, .studies__language-list::before, .section__directions-list::before {
   color: rgb(0, 0, 0);
   font-family: Bookman Old Style;
   font-size: 3.13rem;
@@ -65,7 +68,7 @@
   max-width: 106rem;
   padding: 0 1rem;
   margin: 0 auto;
-  border: 1px solid black;
+  position: relative;
 }
 
 .header__block-nav {
@@ -74,7 +77,7 @@
   justify-content: space-between;
   position: relative;
   z-index: 3;
-  margin: 3rem 0 1.8rem;
+  padding: 3rem 0 1.8rem;
 }
 
 .block__nav-lists {
@@ -275,6 +278,10 @@
   left: -6rem;
 }
 
+.section__trips-subtitle {
+  padding-top: 5rem;
+}
+
 .section__trips-title {
   text-align: center;
   margin-top: -1.5rem;
@@ -363,15 +370,19 @@
   margin-top: 7rem;
 }
 
+.section__team-subtitle {
+  padding-top: 5rem;
+}
+
 .section__team-title {
   margin-top: -2rem;
-  margin-bottom: 4rem;
   text-align: center;
 }
 
 .section__team-slider {
   display: flex;
   position: relative;
+  transition: transform 0.3s ease;
 }
 
 .slider {
@@ -380,15 +391,41 @@
   margin-top: 1rem;
 }
 
+.slick-center {
+  transform: translateY(-5rem);
+  transition: transform 0.3s ease;
+}
+
+.slick-center .slider__trainer-block {
+  border-radius: 1rem 1rem 0 0;
+  background: inherit;
+  width: 120%;
+  margin-left: -1.5rem;
+}
+
+.slick-slide {
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.slick-center .slider__trainer-description {
+  width: 120%;
+  margin-left: -1.5rem;
+  margin-top: -0.1rem;
+  display: block;
+}
+
 .slick-list {
   overflow: hidden;
-  max-width: 85rem;
-  margin: 0 auto;
+  max-width: 75%;
+  margin: -15rem auto;
 }
 
 .slick-track {
   display: flex;
   text-align: center;
+  margin: auto;
+  padding: 25rem 0rem;
 }
 
 .slick-arrow {
@@ -396,24 +433,163 @@
   top: 40%;
   z-index: 10;
   font-size: 0;
-  width: 4rem;
-  height: 4rem;
-  background: red;
+  width: 5rem;
+  height: 5rem;
+  background: inherit;
 }
 
 .slick-prev {
-  top: 40%;
-  left: 5%;
-  background-image: url(../images/img/arrow\ left.svg);
+  top: 44%;
+  background-image: url(../images/img/sl1\ Button\ Left.svg);
+  background-size: cover;
 }
 
 .slick-next {
-  top: 40%;
-  right: 5%;
-  background-image: url(../images/img/arrow\ rite.svg);
+  top: 44%;
+  right: 0;
+  background-image: url(../images/img/sl\ 1\ Button\ Right.svg);
+  background-size: cover;
+}
+
+.team__slider-trainer {
+  background: white;
+  border-radius: 1rem;
+  margin: 0 3.6rem;
+  max-height: 32rem;
 }
 
 .section__team-img {
-  width: 20rem;
-  height: 22rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.slider__trainer-name {
+  font-size: 1.88rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.slider__trainer-description {
+  font-size: 1.2rem;
+  padding: 1.5rem 1rem;
+  display: none;
+  background: white;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.section__reviews-title {
+  margin-top: -2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.swiper-container {
+  max-width: 80%;
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 7.5rem;
+}
+
+.swiper-wrapper {
+  display: flex;
+  margin: auto;
+}
+
+.swiper-slide {
+  width: 84rem;
+}
+
+.swiper-button {
+  font-size: 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 5rem;
+  height: 5rem;
+  border: 0.13rem solid rgb(223, 128, 62);
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 0;
+}
+
+.swiper-button-next {
+  top: 56%;
+  background-image: url(../images/img/Vector\ 12.svg);
+  background-size: 3rem;
+  transform: rotate(180deg);
+}
+
+.swiper-button-prev {
+  top: 56%;
+  background-image: url(../images/img/Vector\ 12.svg);
+  background-size: 3rem;
+}
+
+.reviews__slider-block {
+  text-align: start;
+  max-width: 84rem;
+  background: rgba(222, 116, 43, 0.9);
+  margin-top: 1rem;
+  padding: 3.1rem 5rem;
+  border-radius: 1.25rem;
+}
+
+.slider__block-name {
+  font-size: 2.13rem;
+}
+
+.slider__block-data {
+  margin-bottom: 1.1rem;
+}
+
+.slider__block-text {
+  border-top: 0.13rem solid rgb(252, 252, 252);
+  padding-top: 0.8rem;
+}
+
+.slider__block-img {
+  margin-top: -16.5rem;
+  margin-left: 68.5rem;
+}
+
+.footer {
+  background: rgba(222, 116, 43, 0.9);
+}
+
+.footer__blocks {
+  display: flex;
+  justify-content: space-between;
+  padding: 7.5rem 0 8rem;
+}
+
+.footer__blocks-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  line-height: 3.06rem;
+  margin-top: 1rem;
+}
+
+.footer__block-tel,
+.footer__block-title,
+.footer__block-data,
+.footer__block-email,
+.footer__block-adress {
+  margin-bottom: 1rem;
+}
+
+.footer__block-seti {
+  text-align: center;
+}
+
+.seti__block {
+  margin-top: 0.8rem;
+}
+
+.seti__block-img {
+  padding-left: 0.8rem;
 }/*# sourceMappingURL=style.css.map */

@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/resets.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="./scripts/jqueri.js" defer></script>
     <script src="./scripts/slick.min.js" defer></script>
     <script src="./scripts/script.js" defer></script>
@@ -164,67 +166,85 @@
                 <h2 class="section__team-title">Ми подорожуємо світом</h2>
                 <div class="section__team-slider">
                     <div class="team__slider-trainer">
-                        <img src="./images/img/team_01.svg" alt="" class="section__team-img">
-                        <p class="slider__trainer-name">Валерія Звіранська</p>
-                        <p class="slider__trainer-position">Адміністратор</p>
+                        <div class="slider__trainer-block">
+                            <img src="./images/img/team_01.svg" alt="" class="section__team-img">
+                            <p class="slider__trainer-name">Валерія Звіранська</p>
+                            <p class="slider__trainer-position">Адміністратор</p>
+                        </div>
+                        <p class="slider__trainer-description">Має вищу педагогічну освіту. Її профіль: германські мови. Перекладач.
+                            Викладацький стаж: 22 роки</p>
                     </div>
                     <div class="team__slider-trainer">
-                        <img src="./images/img/team_02.svg" alt="" class="section__team-img">
-                        <p class="slider__trainer-name">Ольга Мануйлова</p>
-                        <p class="slider__trainer-position">Засновниця школи.</p>
+                        <div class="slider__trainer-block">
+                            <img src="./images/img/team_02.svg" alt="" class="section__team-img">
+                            <p class="slider__trainer-name">Ольга Мануйлова</p>
+                            <p class="slider__trainer-position">Засновниця школи.</p>
+                        </div>
                         <p class="slider__trainer-description">Має вищу педагогічну освіту. Її профіль: германські мови. Перекладач. Викладацький стаж: 22 роки</p>
                     </div>
                     <div class="team__slider-trainer">
-                        <img src="./images/img/team_003.svg" alt="" class="section__team-img">
-                        <p class="slider__trainer-name">Наталія Шмалько</p>
-                        <p class="slider__trainer-position">Адміністратор</p>
+                        <div class="slider__trainer-block">
+                            <img src="./images/img/team_003.svg" alt="" class="section__team-img">
+                            <p class="slider__trainer-name">Наталія Шмалько</p>
+                            <p class="slider__trainer-position">Адміністратор</p>
+                        </div>
+                        <p class="slider__trainer-description">Має вищу педагогічну освіту. Її профіль: германські мови. Перекладач.
+                            Викладацький стаж: 22 роки</p>
                     </div>
                     <div class="team__slider-trainer">
-                        <img src="./images/img/team_003.svg" alt="" class="section__team-img">
-                        <p class="slider__trainer-name">Наталія Шмалько</p>
-                        <p class="slider__trainer-position">Адміністратор</p>
+                        <div class="slider__trainer-block">
+                            <img src="./images/img/team_003.svg" alt="" class="section__team-img">
+                            <p class="slider__trainer-name">Наталія Шмалько</p>
+                            <p class="slider__trainer-position">Адміністратор</p>
+                        </div>
+                        <p class="slider__trainer-description">Має вищу педагогічну освіту. Її профіль: германські мови. Перекладач.
+                            Викладацький стаж: 22 роки</p>
                     </div>
                 </div>
             </div>    
         </section>
 
             <section class="section__reviews">
-                <p class="section__reviews-subtitle">Відгуки</p>
-                <h2 class="section__reviews-title">Що кажуть про нас</h2>
-                <div class="section__reviews-slider">
-                    <div>
-                        <div class="reviews__slider-block">
-                            <p class="slider__block-name">Ольга Березовська</p>
-                            <p class="slider__block-data">приватний нотаріус м.Кропивницький</p>
-                            <p class="slider__block-text">Високий рівень викладання – викладачі прекрасні, професіонали своєї справи. Звернулися до Ольги до Жирафа Клаба за
-                            рекомендацією. Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний дизайн офісу. Враження
-                            лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки. Рекомендую.</p>
-                            <img src="" alt="" class="slider__block-img">
-                        </div>
+                <div class="conteiner">
+                    <p class="section__reviews-subtitle">Відгуки</p>
+                    <h2 class="section__reviews-title">Що кажуть про нас</h2>
+                    <div class=" section__reviews-slider swiper-container">
+                        <div class="section__reviews-slider swiper-wrapper">
+                                <div class="reviews__slider-block swiper-slide">
+                                    <p class="slider__block-name">Ольга Березовська</p>
+                                    <p class="slider__block-data">приватний нотаріус м.Кропивницький</p>
+                                    <p class="slider__block-text">Високий рівень викладання – викладачі прекрасні, професіонали своєї справи. Звернулися до Ольги до Жирафа Клаба за
+                                    рекомендацією. Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний дизайн офісу. Враження
+                                    лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки. Рекомендую.</p>
+                                    <img src="./images/img/Background 1.svg" alt="" class="slider__block-img">
+                                </div>
+                                <div class="reviews__slider-block swiper-slide">
+                                    <p class="slider__block-name">Ольга Березовська</p>
+                                    <p class="slider__block-data">приватний нотаріус м.Кропивницький</p>
+                                    <p class="slider__block-text">Високий рівень викладання – викладачі прекрасні, професіонали своєї справи. Звернулися до Ольги до Жирафа Клаба за
+                                    рекомендацією. Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний дизайн офісу. Враження
+                                    лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки. Рекомендую.</p>
+                                    <img src="./images/img/Background 1.svg" alt="" class="slider__block-img">
+                                </div>
+                                <div class="reviews__slider-block swiper-slide">
+                                    <p class="slider__block-name">Ольга Березовська</p>
+                                    <p class="slider__block-data">приватний нотаріус м.Кропивницький</p>
+                                    <p class="slider__block-text">Високий рівень викладання – викладачі прекрасні, професіонали своєї справи. Звернулися до Ольги до Жирафа Клаба за
+                                    рекомендацією. Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний дизайн офісу. Враження
+                                    лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки. Рекомендую.</p>
+                                    <img src="./images/img/Background 1.svg" alt="" class="slider__block-img">
+                                </div>
+                        </div> 
+                        
                     </div>
-                    <div class="reviews__slider-block">
-                        <p class="slider__trainer-name">Ольга Березовська</p>
-                        <p class="slider__block-data">приватний нотаріус м.Кропивницький</p>
-                        <p class="slider__block-text">Високий рівень викладання – викладачі прекрасні, професіонали своєї справи. Звернулися до Ольги до Жирафа Клаба за
-                        рекомендацією. Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний дизайн офісу. Враження
-                        лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки. Рекомендую.</p>
-                        <img src="" alt="" class="slider__block-img">
-                    </div> 
-                </div> 
-               
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </section>
-            <div class="reviews__slider-block">
-                <p class="slider__trainer-name">Ольга Березовська</p>
-                <p class="slider__block-data">приватний нотаріус м.Кропивницький</p>
-                <p class="slider__block-text">Високий рівень викладання – викладачі прекрасні, професіонали своєї справи. Звернулися до Ольги до Жирафа Клаба за
-                рекомендацією. Хочу особливо відзначити організованість, дисципліну, чіткість, гарний та зручний дизайн офісу. Враження
-                лише позитивні, чудові, результат навчання – міжнародний сертифікат у дочки. Рекомендую.</p>
-                <img src="" alt="" class="slider__block-img">
-            </div>
+            
     </main>
 
-    <footer>
+    <footer class="footer">
         <div class="conteiner">
             <div class="footer__blocks">
                 <h2 class="footer__blocks-title">Giraffe Club</h2>
@@ -243,8 +263,8 @@
                 <div class="footer__block-seti">
                     <p class="footer__block-title">Соціальні мережі:</p>
                     <div class="seti__block">
-                        <img src="./images/logo/logo fb.svg" alt="" class="seti__block-img">
-                        <img src="./images/logo/logo insta.svg" alt="" class="seti__block-img">
+                        <a href="#"><img src="./images/logo/logo fb.svg" alt="" class="seti__block-img"></a>
+                        <a href="#"><img src="./images/logo/logo insta.svg" alt="" class="seti__block-img"></a>
                     </div>
                 </div>
             </div>
