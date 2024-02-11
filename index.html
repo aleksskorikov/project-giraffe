@@ -275,10 +275,10 @@
             <form  class="form">
                 <img src="./images/logo/icon close.svg" alt="" class="form-close">
                 <h2 class="form-title">Залишити заявку</h2>
-                <input type="text" class="form-input" placeholder="Ім’я">
-                <input type="text" class="form-input" placeholder="Номер тел.">
-                <button class="form-btn" type="submit">Надіслати</button>
-                
+                <input type="text" class="form-input" id="form__input-name" placeholder="Ім’я" name="name">
+                <input type="tel" class="form-input" id="form__input-tel" placeholder="Номер тел." name="tel">
+                <span class="input__error-tel">Введіть коректний номер</span>
+                <button class="form-btn" type="submit" id="openPopupBtn">Надіслати</button>
             </form>
         </div>
     </section>

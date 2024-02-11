@@ -650,6 +650,17 @@
     display: block;
 }
 
+.input__error-tel {
+    padding: 0 0 0.5rem 0.5rem;
+    color: $color-error-span ;
+    display: none;
+}
+
+.form-error {
+    background: $color-error-bg;
+    border-radius: 1rem;
+}
+
 // ==================popup=======================
 
 .section__popup {

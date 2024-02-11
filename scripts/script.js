@@ -54,9 +54,50 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    formBtn.addEventListener("click", (e) =>{
+
+    function hideNameError() {
+        document.querySelector("#form__input-name").classList.remove("form-error");
+    };
+
+    function hidePhoneError() {
+        document.querySelector(".input__error-tel").style.display = "none";
+        document.querySelector("#form__input-tel").classList.remove("form-error");
+    };
+
+    document.getElementsByName("name")[0].addEventListener('input', hideNameError);
+    document.getElementsByName("tel")[0].addEventListener('input', hidePhoneError);
+
+    openPopupBtn.addEventListener('click', function (e) {
         e.preventDefault();
+
+        let nameInput = document.getElementsByName("name")[0].value;
+        if (nameInput.trim() === "") {
+            document.querySelector("#form__input-name").classList.add("form-error");
+            return;
+        } else {
+            hideNameError();
+            };
+
+        let phoneInput = document.getElementsByName("tel")[0].value;
+        let phoneValid = /^\d+$/;
+
+        if (phoneInput.trim() === "") {
+            document.querySelector("#form__input-tel").classList.add("form-error");
+            return;
+        } else if (!phoneValid.test(phoneInput)) {
+            document.querySelector("#form__input-tel").classList.add("form-error");
+            document.querySelector(".input__error-tel").style.display = "block";
+            
+            return;
+        } else {
+            hidePhoneError(); 
+            };
+
         popup.style.display = "block";
         sectionForm.classList.remove("form-activ");
-    })
+
+        document.querySelector(".form").reset();
+    });
+    
 });
+

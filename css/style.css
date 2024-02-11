@@ -648,6 +648,17 @@
   display: block;
 }
 
+.input__error-tel {
+  padding: 0 0 0.5rem 0.5rem;
+  color: rgb(123, 4, 4);
+  display: none;
+}
+
+.form-error {
+  background: rgb(243, 141, 141);
+  border-radius: 1rem;
+}
+
 .form-close {
   margin: 2.8rem 0 0 30rem;
 }
