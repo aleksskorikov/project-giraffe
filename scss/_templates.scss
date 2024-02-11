@@ -1,0 +1,79 @@
+%maxwidht {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+%textbloc1 {
+    color: $colorbleck;
+    font-family: Bookman Old Style;
+    font-size: 1.63rem;
+    font-weight: 300;
+    line-height: 1.94rem;
+}
+
+%btn-hover {
+    top: 0;
+    position: relative;
+
+    &:hover {
+        background: rgb(221, 220, 220);
+    }
+
+    &:active {
+        top: 1px;
+    }
+}
+
+%titleh2 {
+    color: $colorbleck;
+    font-family: Bookman Old Style;
+    font-size: 3.13rem;
+    font-weight: 300;
+    line-height: 130%;
+}
+
+%subtitle {
+    color: $colorbleck;
+    font-family: Bookman Old Style;
+    font-size: 1.63rem;
+    font-weight: 600;
+    line-height: 1.94rem;
+    margin: 7rem 0 0 0;
+}
+
+%beforecaunter {
+    content: counter(directions-counter);
+    counter-increment: directions-counter;
+    position: absolute;
+    @extend %titleh2;
+    font-size: 2.13rem;
+    left: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border: 0.13rem solid $colorbleck;
+    border-radius: 50%
+}
+
+%section-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(222, 116, 43, 0.9);
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    display: none;
+}
+
+%form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 9rem auto;
+    max-width: 35rem;
+    border-radius: 3rem;
+    background: rgb(252, 252, 252);
+}

@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/resets.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./scripts/swiper.min.js" defer></script>
     <script src="./scripts/jqueri.js" defer></script>
     <script src="./scripts/slick.min.js" defer></script>
     <script src="./scripts/script.js" defer></script>
@@ -31,14 +30,14 @@
                     <div class="block__nav-contact">
                         <button class="nav__contact-btn"><img src="./images/logo/logo tel.svg" alt="logo tel" class="nav__contact-img"></button>
                         <button class="nav__contact-btn"><img src="./images/logo/logo loc.svg" alt="logo loc" class="nav__contact-img"></button>
-                        <button class="nav__contact-btn"><img src="./images/logo/logo post.svg" alt="logo post" class="nav__contact-img"></button>
+                        <button class="nav__contact-btn"><img src="./images/logo/logo post.svg" alt="logo post" class="nav__contact-img" ></button>
                     </div>
                 </div>
                 <div class="section__division"></div>
                 <div class="header__block-data">
                     <h1 class="bock__data-title">Giraffe Club</h1>
                     <p class="bock__data-text">Офіційний сертифікований центр підготовки до міжнародних екзаменів Cambrige</p>
-                    <button class="bock__data-btn">Отримати консультацію</button>
+                    <button class="bock__data-btn" id="open-form">Отримати консультацію</button>
                 </div>
                 <div class="header__block-foto">
                     <img src="./images/img/foto.svg" alt="foto" class="block__foto-foto">
@@ -98,7 +97,7 @@
                             <li class="section__directions-list"><a href="#" class="section__direction-linck">Підготовка дітей до школи</a></li>
                             <li class="section__directions-list"><a href="#" class="section__direction-linck">Літній табір</a></li>
                         </ul>
-                        <button class="section__directions-btn">Залишити заявку</button>
+                        <button class="section__directions-btn" id="open-form">Залишити заявку</button>
                     </div>
                     <img src="./images/img/foto.svg" alt="" class="section__directions-foto">
                 </div>
@@ -152,9 +151,9 @@
                     <img src="./images/img/collage 4.svg" alt="" class="trips__collage-img4">
                     <img src="./images/img/collage 5.svg" alt="" class="trips__collage-img5">
                     <div class="trips__collage-block">
-                        <img src="./images/img/collage 6.svg" alt="" class="trips__collage-img6">
+                        <img src="./images/img/travel_008 1.png" alt="" class="trips__collage-img6">
                         <img src="./images/img/collage 7.svg" alt="" class="trips__collage-img7">
-                        <img src="./images/img/collage 8.svg" alt="" class="trips__collage-img8">
+                        <img src="./images/img/2.png" alt="" class="trips__collage-img8">
                     </div>
                 </div>
             </section>
@@ -270,5 +269,28 @@
             </div>
         </div>
     </footer>
+
+    <section class="section__form" id="section__form">
+        <div class="conteiner">
+            <form  class="form">
+                <img src="./images/logo/icon close.svg" alt="" class="form-close">
+                <h2 class="form-title">Залишити заявку</h2>
+                <input type="text" class="form-input" placeholder="Ім’я">
+                <input type="text" class="form-input" placeholder="Номер тел.">
+                <button class="form-btn" type="submit">Надіслати</button>
+                
+            </form>
+        </div>
+    </section>
+
+    <section class="section__popup" id="section__popup">
+        <div class="conteiner">
+            <div class="popup">
+                <img src="./images/logo/icon close.svg" alt="" class="form-close">
+                <h2 class="popup-title">Дякуємо!</h2>
+                <p class="popup-text">Ваш запит надіслано. Чекайте дзвінка</p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -29,3 +29,34 @@ prevEl: '.swiper-button-prev',
 },
 loop: true,
 });
+
+// ==================form=========================
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const sectionForm = document.querySelector("#section__form");
+    const openForm = document.querySelectorAll("#open-form");
+    const clozeForm = document.querySelectorAll(".form-close");
+    const formBtn = document.querySelector(".form-btn");
+    const popup = document.querySelector("#section__popup");
+
+    openForm.forEach(open => {
+        open.addEventListener("click", () => {
+            sectionForm.classList.add("form-activ");
+        });
+    });
+
+    clozeForm.forEach(closes => {
+        closes.addEventListener("click", () => {
+            sectionForm.classList.remove("form-activ");
+            popup.style.display = "none";
+        });
+    });
+
+    formBtn.addEventListener("click", (e) =>{
+        e.preventDefault();
+        popup.style.display = "block";
+        sectionForm.classList.remove("form-activ");
+    })
+});
