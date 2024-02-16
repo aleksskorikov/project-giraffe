@@ -1,7 +1,7 @@
 
 @import "./_changeable.scss";
 @import "./_templates.scss";
-
+@import "./mixins.scss";
 
 .header {
     @extend %maxwidht;
@@ -15,6 +15,7 @@
     padding: 0 1rem;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 
 .header__block-nav {
@@ -25,6 +26,55 @@
     z-index: 3;
     padding: 3rem 0 1.8rem;
 }
+.header__nav-dropmenu {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $colorwhite;
+    z-index: 5;
+    display: none;
+}
+
+.dropmenu-block {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.06rem solid $colororange;
+    padding: 1.2rem 2rem;
+}
+
+.dropmenu-title {
+    color: rgb(0, 0, 0);
+    font-family: Bookman Old Style;
+    font-size: 2.03rem;
+    font-weight: 600;
+    line-height: 2.38rem;
+}
+
+.dropmenu-btn {
+    background-color: inherit;
+}
+
+
+.dropmenu-lists {
+    margin:2rem 1.5rem ;
+}
+
+.dropmenu-list {
+    margin-bottom: 2rem;
+}
+
+.dropmenu-link {
+    @extend %titleh2;
+    color: $colorbleck;
+    font-size: 1.25rem;
+}
+
+.dropmenu-img {
+    display: block;
+    margin:0 auto 2rem;
+}
+
 
 .block__nav-lists {
     display: flex;
@@ -43,6 +93,10 @@
     background-color: inherit;
 }
 
+.header__burger-menu{
+    display: none;
+}
+
 .section__division{
     border:  0.13rem solid $colorsubtitle;
     width: 110rem;
@@ -55,11 +109,13 @@
 }
 
 .bock__data-title {
-    font-family: Bookman Old Style;
+    font-family: "Bookman Old Style";
     font-size: 5.63rem;
     font-weight: 600;
     line-height: 6.63rem;
+    // @include adaptiv-font(90px, 52px);
 }
+
 
 .bock__data-text {
     @extend %titleh2;
@@ -81,6 +137,9 @@
     z-index: 1;
     top: -35rem;
     left: 67rem;
+}
+.header__bg-adaptiv{
+    display: none;
 }
 
 //======================main===========================
@@ -136,7 +195,7 @@
 }
 .section__directions-vrapper{
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 .section__directions-subtitle {
     @extend %subtitle;
@@ -231,13 +290,15 @@
 .studies__language-img {
     width: 60%;
 }
+.img-adaptiv {
+    display: none;
+}
 
 .studies__format-title {
     @extend %titleh2;
     text-align: center;
     position: relative;
     margin: 4rem;
-    
 }
 
 .studies__format-blocks {
@@ -290,7 +351,6 @@
     grid-template-columns: 25.6rem 42.3rem 34.8rem;
     gap: 0.7rem;
     border-radius: 1rem;
-    // overflow: hidden;
 }
 .trips__collage-block{
     display: grid;
@@ -356,6 +416,9 @@
     height: 14rem;
     margin-left: 3rem;
     border-radius: 1rem;
+}
+.collage__img8-adaptiv{
+    display: none;
 }
 // =======================section__team================================
 
@@ -476,7 +539,7 @@
     padding: 1.5rem 1rem;
     display: none;
     background: $colorwhite;
-    border-radius: 0 0 1rem 1rem
+    border-radius: 0 0 1rem 1rem;
 }
 
 
@@ -503,9 +566,7 @@
     display: flex;
     margin: auto;
 }
-.swiper-slide{
-    width: 84rem;
-}
+
 .swiper-button{
     font-size: 0;
 }
@@ -538,8 +599,8 @@
 }
 
 .reviews__slider-block {
+    width: 75rem;
     text-align: start;
-    max-width: 84rem;
     background:$colorbg;
     margin-top: 1rem;
     padding: 3.1rem 5rem;
@@ -547,6 +608,7 @@
 }
 
 .slider__block-name {
+    min-width: 75rem;
     @extend %titleh2;
     font-size: 2.13rem;
 }
@@ -563,7 +625,7 @@
 }
 .slider__block-img {
     margin-top: -16.5rem;
-    margin-left: 68.5rem;
+    margin-left: 93%;
 }
 
 // ==================footer=============================
@@ -687,6 +749,8 @@
     margin-bottom: 10.3rem;
 }
 
+
+@import "./_adaptiv.scss";
 
 
 

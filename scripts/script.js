@@ -6,15 +6,38 @@ $(document).ready(function () {
         centerMode: true,
         responsive: [
             {
-                breakpoint: 1100,
+                breakpoint: 1285,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 3,
+                    centerMode: false,
                 }
             },
             {
-                breakpoint: 800,
+                breakpoint: 1140,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 925,
                 settings: {
                     slidesToShow: 1,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 541,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: true,
                 }
             },
         ]
@@ -27,7 +50,9 @@ navigation: {
 nextEl: '.swiper-button-next',
 prevEl: '.swiper-button-prev',
 },
-loop: true,
+    loop: true,
+    slidesPerView: 1, 
+
 });
 
 // ==================form=========================
@@ -97,6 +122,14 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionForm.classList.remove("form-activ");
 
         document.querySelector(".form").reset();
+    });
+
+    const dropMenu = document.querySelector(".header__nav-dropmenu")
+    const dropMenuOpen = document.querySelector(".header__burger-menu").addEventListener("click", () => {
+        dropMenu.style.display = "block";
+    });
+    const dropMenuCloze = document.querySelector(".dropmenu-btn").addEventListener("click", () => {
+        dropMenu.style.display = "none";
     });
     
 });

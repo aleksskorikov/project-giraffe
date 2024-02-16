@@ -39,6 +39,10 @@
     font-weight: 600;
     line-height: 1.94rem;
     margin: 7rem 0 0 0;
+    @media (max-width: 431px){
+        font-size: 0.88rem;
+        margin: 1rem 0 0 0 ;
+    }
 }
 
 %beforecaunter {
