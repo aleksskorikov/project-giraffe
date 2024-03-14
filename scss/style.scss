@@ -110,10 +110,9 @@
 
 .bock__data-title {
     font-family: "Bookman Old Style";
-    font-size: 5.63rem;
     font-weight: 600;
     line-height: 6.63rem;
-    // @include adaptiv-font(90px, 52px);
+    @include adaptiv-font(90, 52);
 }
 
 

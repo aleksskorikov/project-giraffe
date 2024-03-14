@@ -1,3 +1,5 @@
+@import'./mixins';
+
 %maxwidht {
     max-width: 120rem;
     margin: 0 auto;
@@ -24,10 +26,11 @@
     }
 }
 
+
 %titleh2 {
     color: $colorbleck;
     font-family: Bookman Old Style;
-    font-size: 3.13rem;
+    @include adaptiv-font(50, 30);
     font-weight: 300;
     line-height: 130%;
 }

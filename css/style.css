@@ -29,9 +29,18 @@
 .popup-title, .popup-text, .form-title, .slider__block-name, .section__reviews-title, .section__team-title, .section__trips-text, .section__trips-title, .format__blocks-title, .studies__format-title, .studies__language-list, .studies__language-title, .section__direction-linck, .section__directions-title, .aboutus__product-text, .section__aboutus-title, .bock__data-text, .dropmenu-link, .format__blocks-title::before, .studies__language-list::before, .section__directions-list::before {
   color: rgb(0, 0, 0);
   font-family: Bookman Old Style;
-  font-size: 3.13rem;
   font-weight: 300;
   line-height: 130%;
+}
+@media (max-width: 767px) {
+  .popup-title, .popup-text, .form-title, .slider__block-name, .section__reviews-title, .section__team-title, .section__trips-text, .section__trips-title, .format__blocks-title, .studies__format-title, .studies__language-list, .studies__language-title, .section__direction-linck, .section__directions-title, .aboutus__product-text, .section__aboutus-title, .bock__data-text, .dropmenu-link, .format__blocks-title::before, .studies__language-list::before, .section__directions-list::before {
+    font-size: calc(30px + 34 * (100vw - 320px) / 1920);
+  }
+}
+@media (min-width: 767px) {
+  .popup-title, .popup-text, .form-title, .slider__block-name, .section__reviews-title, .section__team-title, .section__trips-text, .section__trips-title, .format__blocks-title, .studies__format-title, .studies__language-list, .studies__language-title, .section__direction-linck, .section__directions-title, .aboutus__product-text, .section__aboutus-title, .bock__data-text, .dropmenu-link, .format__blocks-title::before, .studies__language-list::before, .section__directions-list::before {
+    font-size: calc(30px + 20 * 100vw / 1920);
+  }
 }
 
 .section__reviews-subtitle, .section__team-subtitle, .section__trips-subtitle, .section__studies-subtitle, .section__directions-subtitle, .section__aboutus-subtitle {
@@ -186,9 +195,18 @@
 
 .bock__data-title {
   font-family: "Bookman Old Style";
-  font-size: 5.63rem;
   font-weight: 600;
   line-height: 6.63rem;
+}
+@media (max-width: 767px) {
+  .bock__data-title {
+    font-size: calc(52px + 64.6 * (100vw - 320px) / 1920);
+  }
+}
+@media (min-width: 767px) {
+  .bock__data-title {
+    font-size: calc(52px + 38 * 100vw / 1920);
+  }
 }
 
 .bock__data-text {
